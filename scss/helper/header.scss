@@ -1,0 +1,280 @@
+.header-sec{
+    background: var(--primary-bg);
+    height: $height;
+    width: 100%;
+    color: var(--white);
+    padding: 8px 0;
+    ul{
+        @extend .alignCenter;
+    }
+    li{
+        padding-left: 15px
+    }
+}
+.logo-sec{
+    @extend .textCenter;
+}
+.logo img{
+    width: 140px;
+}
+.icon{
+    img{
+        width: 20px;
+    }
+}
+.header{
+    background: var(--secondary-bg);
+    height: $height;
+    width: 100%;
+    color: var(--white);
+    padding: 8px 0;  
+}
+.menu{
+    ul{
+        @extend .alignCenter;
+    }
+    li{
+        padding-right: 30px;
+    }
+    a{
+        color: var(--white);
+        padding: 15px  5px;
+        &:hover{
+            background: var(--white);
+            color: var(--black);
+    }
+}
+}
+.cart{
+    @extend .alignCenter;
+}
+.menu-sec{
+    @extend .textCenter;
+}
+.carts{
+    img{
+        margin-right: 20px;
+    }
+}
+.cart-sec{
+    a{
+        color: var(--white); 
+    }
+}
+.menu-logo{
+    display: none;
+}
+.menu li a:hover{
+    color: var(--black);
+}
+.menu ul .sub-menu{
+    position: absolute;
+    background: var(--black);
+    flex-direction: column;
+    z-index: 1;
+    align-items: flex-start;
+    top: 98px;
+    display: none;
+}
+.sub-menu li {
+    padding-right: 0;
+}
+.menu li:hover .sub-menu{
+    display: block;
+}
+.menu ul .sub-menu li{
+    transition: all 0.5s;
+    width: 100%;
+    border-bottom: 1px solid var(--blue);
+}
+.menu ul .sub-menu li a{
+    display: block;
+    padding: 12px 20px;
+}
+.menu ul .sub-menu li:last-child{
+    border-bottom: 0;
+}
+
+
+
+/* popup */
+.overlay{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.popup{
+    background: var(--white);
+    position: absolute;
+    height: 550px;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top:0;
+    font-size:30px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.hidden{
+    overflow: hidden;
+}
+.welcomes h2{
+    color: var(--white);
+    font-size: 25px;
+   
+}
+.lin-e{
+    border: 3px solid var(--green);
+    width: 100px;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+.welcomes p{
+    color: var(--white);
+}
+.welcomes{
+    padding-left: 30px;
+    background-color: var(--dark-blue);
+    width: 40%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+.froms{
+    display: flex;
+}
+.google li{
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+.google ul{
+    margin-top: 50px;
+}
+.footer{
+    margin-top: -93px;
+}
+.google li{
+    margin: 0 0 10px 52px;
+    padding: 10px 12px;
+}
+.google li a{
+    font-size: 17px;
+    color: var(--dark-blue);
+    display: inline-flex;
+    font-weight: bold;
+}
+.google li span{
+    margin-left: 33px;
+}
+.the input{
+    margin-top: 30px;
+}
+.the-input input{
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 95px 10px 20px;
+    margin-left: 52px;
+    margin-top: 10px;
+    border: 1px solid var(--black);
+}
+.the-input input::placeholder{
+    color: var(--black);
+}
+.checkbox {
+    padding: 10px;
+    font-size: $font16;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 52px;
+}
+.chckbox li label {
+    margin-left: 10px;
+}
+.chckbox input{
+   margin-left: 52px;
+   margin-top: 20px;
+}
+.chckbox button{
+    background: var(--green);
+    font-size: 20px;
+    color: var(--black);
+    margin-top: 10px;
+    width: 86%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 52px;
+    cursor: pointer;
+}
+.chckbox span{
+    font-size: 18px;
+    margin-left: 52px;
+    color: var(--bangani);
+    font-weight: bold;
+}
+.the-member{
+    margin-left: 52px;
+    margin-top: 14px;
+    text-align: center;
+}
+.the-member span{
+    color: var(--bangani);
+    font-size: 16px;
+    margin-left: 4px;
+    font-weight: bold;
+}
+.the-member a{
+    color: var(--blue-colour);
+}
+.chckbox li a{
+    color: var(--black);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.span span{
+    display: flex;
+    justify-content: center;
+    margin-left: 48px;
+}
+.welcome{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* responsive Css */
+@media screen and (max-width:767px){
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .header{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+    .menu-logo{
+       display: block;
+       img{
+        width: 28px;
+       }
+    }
+}

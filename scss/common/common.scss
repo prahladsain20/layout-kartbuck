@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1280px;
+    margin: auto;
+}
+body{
+    font-family: 'Jost', sans-serif;
+}
+.alignCenter{
+    display: flex;
+    align-items: center;
+}
+.textCenter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textCenters{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    display: flex;
+}
+
+.displays{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.overlay{
+    background: rgb(0,  0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+

@@ -1,0 +1,25 @@
+:root {
+
+--primary-bg: #fff;
+--secondary-bg: #282828;
+--primarys-bg:#6d6d6d;
+--secondarys-bg:#f2f2f2;
+--secon-dary-bg:#c7c7c7;
+--secon-deary-bg:#333436;
+--ms-perspective: #515151;
+
+--text-color: #222222;
+--white: #fff;
+--black: #000;
+--text-colors:#6d6d6d;
+--green:#679509;
+--blue:#dddddd;
+--dark-blue: #002333;
+--bangani:#2a06d0;
+--blue-colour: #130342;
+
+}
+// mixin
+@mixin border($color) {
+    border: 1px solid $color;
+}
